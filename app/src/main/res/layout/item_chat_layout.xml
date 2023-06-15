@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ai_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="parent">
+        <ImageView
+            android:id="@+id/ellipse_128"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            app:layout_constraintStart_toStartOf="@+id/text_gchat_message_me"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_gchat_message_me"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:background="@drawable/ai_msg_bg"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:maxWidth="260dp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:text="This is a Message wet fge eer ertre rer"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_128" />
+
+        <ImageView
+            android:id="@+id/copy_message"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/baseline_content_copy_24"
+            android:layout_marginStart="@dimen/_4sdp"
+            app:layout_constraintStart_toEndOf="@+id/text_gchat_message_me"
+            app:layout_constraintTop_toTopOf="@+id/text_gchat_message_me" />
+
+        <ImageView
+            android:id="@+id/share_message"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/baseline_share_24"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintStart_toEndOf="@+id/text_gchat_message_me"
+            app:layout_constraintTop_toBottomOf="@+id/copy_message" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sender_image"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            app:layout_constraintEnd_toEndOf="@+id/my_message_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/my_message_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/my_message_background"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:maxWidth="260dp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:text="This is a Message wet fge eer ertre rer "
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sender_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

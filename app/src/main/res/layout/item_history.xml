@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="skdfs iod ghidjf"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:includeFontPadding="false"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        style="@style/Widget.Material3.CardView.Filled"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/Boxes"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/navigate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/card_image_background"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/home_bot"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                />
+
+            <TextView
+                android:id="@+id/history_body"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:text="@string/american_history_details"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@+id/data_time"
+                app:layout_constraintEnd_toStartOf="@+id/navigate"
+                app:layout_constraintStart_toEndOf="@+id/cardImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/data_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29 Dec 2023  |   09:12 AM"
+                android:textSize="@dimen/_10sdp"
+                android:includeFontPadding="false"
+                android:layout_marginVertical="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@+id/history_body"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

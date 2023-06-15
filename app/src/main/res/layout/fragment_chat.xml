@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/chat_ai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/chat_ai"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow" />
+
+    <TextView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableStartCompat="@drawable/baseline_arrow_back_24" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_gchat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_ai" />
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/ask_question_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_16sdp"-->
+<!--        android:layout_marginVertical="@dimen/_12sdp"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:background="@drawable/askquestionbox"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/mic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="@dimen/_56sdp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:src="@drawable/baseline_mic_24"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginStart="@dimen/_12sdp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:hint ="@string/ask_a_quest"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/primary_text"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            android:textColorHint="@color/primary_text"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/mic"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/mic"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/mic"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/send_text"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/send_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="44dp"-->
+<!--            android:src="@drawable/baseline_send_24"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/mic" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

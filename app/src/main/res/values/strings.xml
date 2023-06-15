@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Chat AI</string>
+    <string name="logo">Logo</string>
+    <string name="welcome_to">welcome_to</string>
+    <string name="chat_ai">Chat AI</string>
+    <string name="login">Login</string>
+    <string name="or_continue">Or Continue with</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_">Welcome to  AI Chat</string>
+    <string name="get_started">Get Started</string>
+    <string name="ask_a_quest">  Ask a question</string>
+    <string name="hello_i_am_">Hello, i am Scientist you can ask any question related to Science and technology i will answer</string>
+    <string name="horizon">Horizon</string>
+    <string name="scientist">"Scientist "</string>
+
+
+    <string name="facebook">Facebook</string>
+    <string name="facebook_detail">Assistant AI will write a description for your post as you want.</string>
+
+    <string name="instagram">Instagram</string>
+    <string name="instagram_detail">Assistant AI will write a Caption for your Instagram post.</string>
+
+    <string name="email">Email</string>
+    <string name="email_detail">Assistant AI will write a professional Email for you
+and your business.</string>
+
+    <string name="linkdin">LinkedIn</string>
+    <string name="linkdin_detail">Create a meaning full post for linkedIn.</string>
+
+    <string name="twitter">Twitter</string>
+    <string name="twitter_detail">Concise your long text  for posting in twitter. </string>
+
+    <string name="cpp">C++</string>
+    <string name="cpp_details">Get code in C++, and  to know about your code errors.</string>
+
+    <string name="java">Java</string>
+    <string name="java_details">Assistant AI will write code for you in java. </string>
+
+    <string name="github">Github</string>
+    <string name="github_details">Code collaboration and version control made easy. </string>
+
+    <string name="html">HTML</string>
+    <string name="html_details">AI-powered support for mastering HTMLs web design prowess. </string>
+
+    <string name="oop">OOP</string>
+    <string name="oop_details">Master OOP concepts for powerful programming.</string>
+
+    <string name="ML">Machine Learning</string>
+    <string name="ML_details">Harness  potential of machine learning for data-driven insights.</string>
+
+    <string name="mental_health">Mental Health</string>
+    <string name="mental_health_details">Supporting your well-being by AI-guided mental health care.</string>
+
+    <string name="nutrition">Nutrition</string>
+    <string name="nutrition_details">AI-powered guidance for healthy and balanced nutrition.</string>
+
+    <string name="exercise">Exercise</string>
+    <string name="exercise_details">Personalized workouts and fitness plans at your fingertips.</string>
+
+    <string name="sleep_health">Sleep health</string>
+    <string name="sleep_health_details">Optimize your sleep for better health and well-being.</string>
+
+    <string name="interview_prepration">Interview Prepration</string>
+    <string name="interview_prepration_details">AI guidance for acing your interview preparation.</string>
+
+    <string name="resume_writing">Resume writing</string>
+    <string name="resume_writing_details">Craft compelling resumes with AI-powered assistance.</string>
+
+    <string name="questions">Questions</string>
+    <string name="questions_details">Mastering behavioral questions with AI-driven insights.</string>
+
+    <string name="interview_mistakes">Interview Mistakes</string>
+    <string name="interview_mistakes_details">Avoiding common interview pitfalls with AI-backed advice.</string>
+
+    <string name="dress_code">dress code</string>
+    <string name="dress_code_details">Dress for success with AI-recommended interview attire.</string>
+
+    <string name="interview_tips">Interview Tips</string>
+    <string name="interview_tips_details">Unlocking insider tips for interview success with AI.</string>
+
+    <string name="mock_interview">Mock Interview</string>
+    <string name="mock_interview_details">Polishing your skills through AI mock interview practice.</string>
+
+    <string name="world_war">worlds War</string>
+    <string name="world_war_details">AI insights on the global conflicts of the past.</string>
+
+    <string name="cold_war">Cold War</string>
+    <string name="cold_war_details">Understanding the geopolitical tensions through AI guidance.</string>
+
+    <string name="islamic_history">Islamic history</string>
+    <string name="islamic_history_details">Exploring the rich tapestry of Islamic history with AI.</string>
+
+    <string name="american_history">American history</string>
+    <string name="american_history_details">AI-assisted journey into the birth of America.</string>
+
+    <string name="middle_ages">Middle Ages</string>
+    <string name="middle_ages_details">Unveiling the complexities of the Middle Ages with AI.</string>
+
+    <string name="holocaust">HoloCaust</string>
+    <string name="holocaust_details">AI-supported exploration of the Holocaust.</string>
+
+    <string name="ancient_ages">Ancient ages</string>
+    <string name="ancient_ages_details">Journeying through ancient times with AI as your guide</string>
+
+    <string name="medieval_europe">Medieval Europe</string>
+    <string name="medieval_europe_details">Exploring the dynamic era of Medieval Europe with AI.</string>
+
+    <string name="poetry">Poetry</string>
+    <string name="poetry_details">Unlock your poetic prowess with AI-guided creativity.</string>
+
+    <string name="blogging">Blogging</string>
+    <string name="blogging_details">Master the art of blogging with AI-powered insights.</string>
+
+    <string name="essay_writing">Essay writing</string>
+    <string name="essay_writing_details">Write essays with AI-enhanced writing techniques.</string>
+
+    <string name="story_telling">Storytelling</string>
+    <string name="story_telling_details">Master the art of captivating online storytelling.</string>
+
+    <string name="article">Article</string>
+    <string name="article_details">Create articles with AI-driven research and structure.</string>
+
+    <string name="photograph">paragraph</string>
+    <string name="photograph_details">Craft concise and impactful paragraphs with AI assistance.</string>
+
+    <string name="summarize">Summarize</string>
+    <string name="summarize_details">Condense content with AI-summarization techniques.</string>
+
+    <string name="languages">languages</string>
+    <string name="languages_details">Expand linguistic prowess with AI-language enrichment.</string>
+    <string name="upgrade_to_premium">Become a VIP member</string>
+    <string name="become_a_vip_member">Become A VIP Member</string>
+    <string name="general">General</string>
+    <string name="history">History</string>
+    <string name="security">Security</string>
+    <string name="app_language">App Language</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_app">Share app</string>
+    <string name="rate_us">Rate us</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="about_ai_chat">About AI Chat</string>
+
+
+</resources>
