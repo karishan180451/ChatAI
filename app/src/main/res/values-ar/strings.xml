@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chat AI</string>
+    <string name="logo">شعار</string>
+    <string name="welcome_to">مرحبًا بك في</string>
+    <string name="chat_ai">Chat AI</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="or_continue">أو استمر بواسطة</string>
+    <string name="hello_blank_fragment">مرحبًا بك في الشاشة الفارغة</string>
+    <string name="welcome_to_">مرحبًا بك في AI Chat</string>
+    <string name="get_started">ابدأ</string>
+    <string name="ask_a_quest">اسأل سؤالًا</string>
+    <string name="hello_i_am_">مرحبًا، أنا عالم، يمكنك طرح أي سؤال يتعلق بالعلوم والتكنولوجيا وسأجيب</string>
+    <string name="horizon">الأفق</string>
+    <string name="scientist">عالم</string>
+    <string name="facebook">فيسبوك</string>
+    <string name="facebook_detail">سيقوم مساعد AI بكتابة وصف لمنشورك كما تريد.</string>
+    <string name="instagram">إنستجرام</string>
+    <string name="instagram_detail">سيقوم مساعد AI بكتابة تعليق لمنشورك في إنستجرام.</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="email_detail">سيقوم مساعد AI بكتابة بريد إلكتروني احترافي لك ولعملك.</string>
+    <string name="linkdin">لينكدين</string>
+    <string name="linkdin_detail">إنشاء منشور ذو مغزى لـ LinkedIn.</string>
+    <string name="twitter">تويتر</string>
+    <string name="twitter_detail">اختصر نصك الطويل للنشر على تويتر.</string>
+    <string name="cpp">C++</string>
+    <string name="cpp_details">الحصول على الكود في لغة C++ ومعرفة أخطاء الكود الخاص بك.</string>
+    <string name="java">جافا</string>
+    <string name="java_details">سيقوم مساعد AI بكتابة الكود بالنسبة لك في لغة جافا.</string>
+    <string name="github">جيت هاب</string>
+    <string name="github_details">التعاون في الكود والتحكم في الإصدارات بسهولة.</string>
+    <string name="html">HTML</string>
+    <string name="html_details">دعم يعتمد على الذكاء الاصطناعي للتمكن من إتقان تصميم الويب باستخدام HTML.</string>
+    <string name="oop">OOP</string>
+    <string name="oop_details">احتراف مفاهيم OOP للبرمجة القوية.</string>
+    <string name="ML">تعلم الآلة</string>
+    <string name="ML_details">استغلال إمكانات التعلم الآلي للحصول على رؤى مستندة إحصائيًا.</string>
+    <string name="mental_health">الصحة العقلية</string>
+    <string name="mental_health_details">دعم صحتك العقلية من خلال الرعاية العقلية الموجهة بواسطة الذكاء الاصطناعي.</string>
+    <string name="nutrition">التغذية</string>
+    <string name="nutrition_details">إرشاد قائم على الذكاء الاصطناعي للتغذية الصحية والمتوازنة.</string>
+    <string name="exercise">التمرين</string>
+    <string name="exercise_details">خطط تدريب شخصية ولياقة بأطراف أصابعك.</string>
+    <string name="sleep_health">صحة النوم</string>
+    <string name="sleep_health_details">تحسين نومك لصحة ورفاهية أفضل.</string>
+    <string name="interview_prepration">تحضير المقابلات</string>
+    <string name="interview_prepration_details">إرشاد AI لتحقيق النجاح في التحضير للمقابلات.</string>
+    <string name="resume_writing">كتابة السيرة الذاتية</string>
+    <string name="resume_writing_details">صياغة سير ذاتية مقنعة بمساعدة معززة بالذكاء الاصطناعي.</string>
+    <string name="questions">الأسئلة</string>
+    <string name="questions_details">السيطرة على الأسئلة السلوكية باستخدام رؤى مدعومة بالذكاء الاصطناعي.</string>
+    <string name="interview_mistakes">أخطاء المقابلة</string>
+    <string name="interview_mistakes_details">تجنب الأخطاء الشائعة في المقابلات بمشورة مدعومة بالذكاء الاصطناعي.</string>
+    <string name="dress_code">شروط اللباس</string>
+    <string name="dress_code_details">نصائح متقدمة للملابس المناسبة للمقابلات الوظيفية.</string>
+    <string name="interview_tips">نصائح المقابلة</string>
+    <string name="interview_tips_details">فتح نصائح داخلية لنجاح المقابلة باستخدام الذكاء الاصطناعي.</string>
+
+    <string name="mock_interview">مقابلة تجريبية</string>
+    <string name="mock_interview_details">تطوير مهاراتك من خلال التدريب على المقابلات التجريبية بمساعدة الذكاء الاصطناعي.</string>
+
+    <string name="world_war">حروب العالم</string>
+    <string name="world_war_details">نظرة الذكاء الاصطناعي على الصراعات العالمية في الماضي.</string>
+
+    <string name="cold_war">الحرب الباردة</string>
+    <string name="cold_war_details">فهم التوترات الجيوسياسية من خلال الإرشادات المدعومة بالذكاء الاصطناعي.</string>
+
+    <string name="islamic_history">التاريخ الإسلامي</string>
+    <string name="islamic_history_details">استكشاف خيوط التاريخ الإسلامي الغني بمساعدة الذكاء الاصطناعي.</string>
+
+    <string name="american_history">التاريخ الأمريكي</string>
+    <string name="american_history_details">رحلة مدعومة بالذكاء الاصطناعي إلى ولادة أمريكا.</string>
+
+    <string name="middle_ages">العصور الوسطى</string>
+    <string name="middle_ages_details">كشف التعقيدات الخاصة بالعصور الوسطى مع مساعدة الذكاء الاصطناعي.</string>
+
+    <string name="holocaust">المحرقة</string>
+    <string name="holocaust_details">استكشاف المحرقة بمساعدة الذكاء الاصطناعي.</string>
+
+    <string name="ancient_ages">العصور القديمة</string>
+    <string name="ancient_ages_details">رحلة عبر العصور القديمة مع دليلك الذكاء الاصطناعي.</string>
+
+    <string name="medieval_europe">أوروبا الوسطى</string>
+    <string name="medieval_europe_details">استكشاف عصر أوروبا الوسطى الديناميكي بمساعدة الذكاء الاصطناعي.</string>
+
+    <string name="poetry">الشعر</string>
+    <string name="poetry_details">اكتشاف موهبتك الشعرية مع إبداع مدعوم بالذكاء الاصطناعي.</string>
+
+    <string name="blogging">المدونة</string>
+    <string name="blogging_details">احترف فن المدونة مع إرشادات مدعومة بالذكاء الاصطناعي.</string>
+
+    <string name="essay_writing">كتابة المقالات</string>
+    <string name="essay_writing_details">كتابة المقالات باستخدام تقنيات الكتابة المعززة بالذكاء الاصطناعي.</string>
+
+    <string name="story_telling">رواية القصص</string>
+    <string name="story_telling_details">احترف فن سرد القصص المثيرة عبر الإنترنت.</string>
+
+    <string name="article">المقال</string>
+    <string name="article_details">إنشاء مقالات باستخدام البحث والهيكل المدعوم بالذكاء الاصطناعي.</string>
+
+    <string name="photograph">الفقرة</string>
+    <string name="photograph_details">صياغة فقرات موجزة وذات تأثير باستخدام مساعدة الذكاء الاصطناعي.</string>
+
+    <string name="summarize">تلخيص</string>
+    <string name="summarize_details">تلخيص المحتوى باستخدام تقنيات تلخيص الذكاء الاصطناعي.</string>
+
+    <string name="languages">اللغات</string>
+    <string name="languages_details">توسيع الإتقان اللغوي مع تحسين اللغة المدعوم بالذكاء الاصطناعي.</string>
+
+    <string name="upgrade_to_premium">أصبح عضوًا VIP</string>
+    <string name="become_a_vip_member">أصبح عضوًا VIP</string>
+    <string name="general">عام</string>
+    <string name="history">تاريخ</string>
+    <string name="security">أمان</string>
+    <string name="app_language">لغة التطبيق</string>
+    <string name="feedback">ملاحظات</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="rate_us">قيّمنا</string>
+    <string name="about">حول</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="about_ai_chat">حول AI Chat</string>
+    <string name="today">اليوم</string>
+    <string name="delete">حذف</string>
+    <string name="are_you_sure_you_want_clear_all_history">هل أنت متأكد أنك تريد مسح كل السجل؟</string>
+    <string name="cancel">إلغاء</string>
+    <string name="we_work_super_hard_to_make_application_better_for_you_and_would_love_to_know">نحن نعمل بجد لجعل التطبيق أفضل بالنسبة لك ونحب أن نعرف</string>
+    <string name="your_opinion_matters_to_us">رأيك يهمنا!</string>
+    <string name="thank_you_for_rating_us">شكرًا لتقييمك لنا!</string>
+    <string name="what_type_of_problem_are_you_facing">ما نوع المشكلة التي تواجهها؟</string>
+    <string name="crash">تعطل التطبيق</string>
+    <string name="app_not_responding">عدم استجابة التطبيق</string>
+    <string name="function_disabled">تعطيل الوظيفة</string>
+    <string name="premium_not_working">عدم عمل العضوية المميزة</string>
+    <string name="don_t_know_how_to_use">لا أعرف كيفية الاستخدام</string>
+    <string name="other">أخرى</string>
+    <string name="details">التفاصيل</string>
+    <string name="share_your_thoughts">شارك أفكارك</string>
+    <string name="submit">إرسال</string>
+    <string name="all_language">جميع اللغات</string>
+    <string name="system_default">الإعداد الافتراضي للنظام</string>
+    <string name="upgrade_me">"قم بترقيتي "</string>
+</resources>

@@ -3,6 +3,9 @@ package com.example.chatai.data.model
 import androidx.annotation.StringRes
 import com.example.chatai.R
 
+
+data class History(var chatId: Int, var FirstMessageText: String, var chatDate: Long)
+
 data class ExploreOptions(var title: String, val optionDetails: List<OptionDetails>)
 
 data class OptionDetails( /*@DrawableRes val imageid: Int ,*/ @StringRes val title: Int, @StringRes val details: Int)

@@ -58,13 +58,6 @@ class ExploreInboxFragment : Fragment() {
 
         exploreViewModel.optionTitle.value?.let { manageExploreInboxRecyclerView(it) }
 
-//        viewLifecycleOwner.lifecycleScope.launch {
-//            repeatOnLifecycle(Lifecycle.State.RESUMED) {
-//
-//            }
-//        }
-
-
     }
 
     private fun manageExploreInboxRecyclerView(option: String){
@@ -79,6 +72,7 @@ class ExploreInboxFragment : Fragment() {
         val layoutManager = GridLayoutManager(requireContext(), 1)
         binding.recyclerviewQuestions.layoutManager = layoutManager
         _exploreInboxAdapter = ExploreInboxAdapter{
+            chatViewModel.updateFromScreen("explore inbox")
             exploreViewModel.updateOptionQuestion(it)
         }
         binding.recyclerviewQuestions.adapter = exploreInboxAdapter

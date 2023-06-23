@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/card_bg_main"
+    android:padding="@dimen/_12sdp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/rateUsHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:text="@string/rate_us"
+        android:textColor="@color/Primary"
+        android:textFontWeight="600"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/ivClose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_16sdp"
+        android:text="@string/your_opinion_matters_to_us"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:maxLines="1" android:gravity="start"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/rateUsHeading"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_14sdp"
+        android:includeFontPadding="false"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:text="@string/we_work_super_hard_to_make_application_better_for_you_and_would_love_to_know"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:gravity="start"
+        android:id="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RatingBar android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rbRateUs"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:layout_marginVertical="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:progressTint="#F4B206"
+        android:rating="0"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_12sdp"
+        android:includeFontPadding="false"
+        android:textColor="@color/primary_text"
+        android:text="@string/thank_you_for_rating_us"
+        android:paddingHorizontal="@dimen/_9sdp"
+        android:gravity="center" android:layout_alignParentEnd="true"
+        android:id="@+id/tv3" app:layout_constraintTop_toBottomOf="@id/rbRateUs"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ivClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#998E8E8E" android:src="@drawable/ic_close"
+        android:elevation="@dimen/_5sdp"
+        android:contentDescription="@string/app_name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

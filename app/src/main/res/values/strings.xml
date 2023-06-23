@@ -141,6 +141,27 @@ and your business.</string>
     <string name="about">About</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="about_ai_chat">About AI Chat</string>
+    <string name="today">Today</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_you_want_clear_all_history">Are you sure you want clear all history?</string>
+    <string name="cancel">cancel</string>
+    <string name="we_work_super_hard_to_make_application_better_for_you_and_would_love_to_know">We work super hard to make application better for you, and would love to know</string>
+    <string name="your_opinion_matters_to_us">Your opinion matters to us!</string>
+    <string name="thank_you_for_rating_us">Thank you for rating us!</string>
+    <string name="what_type_of_problem_are_you_facing">What type of problem are you facing?</string>
+    <string name="crash">Crash</string>
+    <string name="app_not_responding">App not responding</string>
+    <string name="function_disabled">Function disabled</string>
+    <string name="premium_not_working">Premium not working</string>
+    <string name="don_t_know_how_to_use">Don’t know how to use</string>
+    <string name="other">Other</string>
+    <string name="details">Details</string>
+    <string name="share_your_thoughts">Share your thoughts</string>
+    <string name="submit">Submit</string>
+    <string name="all_language">All Language</string>
+    <string name="system_default">System Default</string>
+    <string name="upgrade_me">Upgrade Me</string>
+    <string name="purchase">Purchase</string>
 
 
 </resources>

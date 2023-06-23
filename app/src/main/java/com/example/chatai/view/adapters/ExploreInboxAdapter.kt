@@ -28,12 +28,12 @@ class ExploreInboxAdapter(private  val mycallback:(String)->Unit) : ListAdapter<
         RecyclerView.ViewHolder(binding.root) {
         fun bind(currentItem: String?, mycallback: (String) -> Unit) {
 
-            binding.card.setOnClickListener {
-                mycallback(binding.question.text.toString())
-            }
-
             if (currentItem != null) {
                 binding.question.text = currentItem
+
+                binding.card.setOnClickListener {
+                    mycallback(binding.question.text.toString())
+                }
             }
         }
     }
@@ -43,6 +43,6 @@ class ExploreInboxAdapter(private  val mycallback:(String)->Unit) : ListAdapter<
             oldItem == newItem
 
         override fun areContentsTheSame(oldItem: String, newItem: String) =
-            oldItem == newItem
+            oldItem.length == newItem.length
     }
 }

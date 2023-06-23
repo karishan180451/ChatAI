@@ -17,5 +17,6 @@
         <item name="fontFamily">@font/poppins</item>
         <item name="android:font" tools:targetApi="o">@font/poppins</item>
         <item name="android:fontFamily" tools:targetApi="o">@font/poppins</item>
+
     </style>
 </resources>

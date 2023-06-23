@@ -14,7 +14,7 @@ import com.example.chatai.utils.Extensions.hide
 import com.example.chatai.utils.Extensions.show
 
 
-class MessageListAdapter : ListAdapter<Message, MessageListAdapter.ViewHolder>(DiffCallback()) {
+class MessageListAdapter(private  val mycallback:(String?)->Unit, private val callbackShare:(String?)->Unit) : ListAdapter<Message, MessageListAdapter.ViewHolder>(DiffCallback()) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,13 +30,13 @@ class MessageListAdapter : ListAdapter<Message, MessageListAdapter.ViewHolder>(D
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = getItem(position)
 
-        holder.bind(currentItem)
+        holder.bind(currentItem, mycallback, callbackShare)
     }
 
 
     inner class ViewHolder(private val binding: ItemChatLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(currentItem: Message) {
+        fun bind(currentItem: Message, mycallback: (String?) -> Unit, callbackShare: (String?) -> Unit) {
             if (currentItem.isAI)
             {
                 binding.aiTextLayout.show()
@@ -44,6 +44,14 @@ class MessageListAdapter : ListAdapter<Message, MessageListAdapter.ViewHolder>(D
                 binding.textGchatMessageMe.text = currentItem.message
                 binding.ellipse128.load(R.drawable.home_bot){
                     transformations(CircleCropTransformation())
+                }
+
+                binding.shareMessage.setOnClickListener {
+                    callbackShare(currentItem.message)
+                }
+
+                binding.copyMessage.setOnClickListener {
+                    mycallback(binding.textGchatMessageMe.text.toString())
                 }
             }
             else{

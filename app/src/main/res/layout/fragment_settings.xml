@@ -32,8 +32,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
             <View
 
                 android:layout_width="0dp"
@@ -86,14 +85,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
+                    android:includeFontPadding="false"
                     android:text="Enjoy all premium features"
                     android:textColor="#8D4E04"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="@dimen/_2sdp"
                     android:textSize="@dimen/_10sdp"
                     android:textStyle="bold"
-                    android:includeFontPadding="false"
-                    app:layout_constraintEnd_toEndOf="@+id/become_a_vip"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/become_a_vip"
                     app:layout_constraintTop_toBottomOf="@+id/become_a_vip" />
 
@@ -130,12 +128,15 @@
                 app:layout_constraintStart_toStartOf="@+id/general_card"
                 app:layout_constraintTop_toTopOf="@+id/general_card"
                 android:background="@drawable/card_bg_main"/>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/general_card"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/gold_rect"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/gold_rect"
                 app:layout_constraintTop_toBottomOf="@+id/general">
 
@@ -155,12 +156,13 @@
 
                 <TextView
                     android:id="@+id/history_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toTopOf="@+id/view1"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/history"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <View
@@ -174,39 +176,40 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/history" />
 
-                <TextView
-                    android:id="@+id/security"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_12sdp"
-                    android:gravity="top"
-                    android:includeFontPadding="false"
-                    android:text="@string/security"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_14sdp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view1" />
+                <!--                <TextView-->
+                <!--                    android:id="@+id/security"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="@dimen/_12sdp"-->
+                <!--                    android:gravity="top"-->
+                <!--                    android:includeFontPadding="false"-->
+                <!--                    android:text="@string/security"-->
+                <!--                    android:textColor="@color/primary_text"-->
+                <!--                    android:textSize="@dimen/_14sdp"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/view1" />-->
 
-                <TextView
-                    android:id="@+id/security_next"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
-                    app:layout_constraintBottom_toTopOf="@+id/view2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view1" />
+                <!--                <TextView-->
+                <!--                    android:id="@+id/security_next"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="@dimen/_12sdp"-->
+                <!--                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"-->
+                <!--                    app:layout_constraintBottom_toTopOf="@+id/view2"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toEndOf="@+id/security"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/view1" />-->
 
-                <View
-                    android:id="@+id/view2"
-                    android:layout_width="0dp"
-                    android:layout_height="0.5dp"
-                    android:layout_marginHorizontal="@dimen/_8sdp"
-                    android:layout_marginVertical="@dimen/_12sdp"
-                    android:background="@color/primary_text"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/security" />
+                <!--                <View-->
+                <!--                    android:id="@+id/view2"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="0.5dp"-->
+                <!--                    android:layout_marginHorizontal="@dimen/_8sdp"-->
+                <!--                    android:layout_marginVertical="@dimen/_12sdp"-->
+                <!--                    android:background="@color/primary_text"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/security" />-->
 
                 <TextView
                     android:id="@+id/app_language"
@@ -219,16 +222,17 @@
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/_14sdp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+                    app:layout_constraintTop_toBottomOf="@+id/view1" />
 
                 <TextView
                     android:id="@+id/app_language_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toTopOf="@+id/view3"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_language"
                     app:layout_constraintTop_toBottomOf="@+id/view2" />
 
                 <TextView
@@ -268,12 +272,13 @@
 
                 <TextView
                     android:id="@+id/app_theme_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_theme"
                     app:layout_constraintTop_toBottomOf="@+id/view3" />
 
                 <TextView
@@ -314,12 +319,15 @@
                 app:layout_constraintEnd_toEndOf="@+id/feedback_card"
                 app:layout_constraintStart_toStartOf="@+id/feedback_card"
                 app:layout_constraintTop_toTopOf="@+id/feedback_card" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/feedback_card"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/gold_rect"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/gold_rect"
                 app:layout_constraintTop_toBottomOf="@+id/feedback">
 
@@ -339,12 +347,13 @@
 
                 <TextView
                     android:id="@+id/share_app_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toTopOf="@+id/view4"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/share_app"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <View
@@ -374,12 +383,13 @@
 
                 <TextView
                     android:id="@+id/rate_us_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toTopOf="@+id/view5"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rate_us"
                     app:layout_constraintTop_toTopOf="@+id/view4" />
 
                 <View
@@ -409,15 +419,14 @@
 
                 <TextView
                     android:id="@+id/feedback_opt_next"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_12sdp"
-                    app:drawableStartCompat="@drawable/baseline_navigate_next_24"
+                    app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/feedback_opt"
                     app:layout_constraintTop_toTopOf="@+id/view5" />
-
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -468,48 +477,50 @@
 
             <TextView
                 android:id="@+id/privacy_policy_next"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
-                app:drawableStartCompat="@drawable/baseline_navigate_next_24"
-                app:layout_constraintBottom_toTopOf="@+id/view8"
+                app:drawableEndCompat="@drawable/baseline_navigate_next_24"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/privacy_policy"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/view8"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginHorizontal="@dimen/_8sdp"
-                android:layout_marginVertical="@dimen/_12sdp"
-                android:background="@color/primary_text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/privacy_policy" />
+<!--            <View-->
+<!--                android:id="@+id/view8"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0.5dp"-->
+<!--                android:layout_marginHorizontal="@dimen/_8sdp"-->
+<!--                android:layout_marginVertical="@dimen/_12sdp"-->
+<!--                android:background="@color/primary_text"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/privacy_policy" />-->
 
-            <TextView
-                android:id="@+id/about_ai_chat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_12sdp"
-                android:gravity="top"
-                android:includeFontPadding="false"
-                android:text="@string/about_ai_chat"
-                android:textColor="@color/primary_text"
-                android:textSize="@dimen/_14sdp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view8"
-                tools:layout_editor_absoluteY="10dp" />
+<!--            <TextView-->
+<!--                android:id="@+id/about_ai_chat"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_12sdp"-->
+<!--                android:gravity="top"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="@string/about_ai_chat"-->
+<!--                android:textColor="@color/primary_text"-->
+<!--                android:textSize="@dimen/_14sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/view8"-->
+<!--                tools:layout_editor_absoluteY="10dp" />-->
 
-            <TextView
-                android:id="@+id/about_ai_chat_next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_12sdp"
-                app:drawableStartCompat="@drawable/baseline_navigate_next_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/view8" />
+<!--            <TextView-->
+<!--                android:id="@+id/about_ai_chat_next"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_12sdp"-->
+<!--                app:drawableEndCompat="@drawable/baseline_navigate_next_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/about_ai_chat"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/view8" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,17 +1,41 @@
 package com.example.chatai.utils
 
-import android.R
-import android.app.Activity
-import android.content.ActivityNotFoundException
-import android.content.Intent
-import android.speech.RecognizerIntent
+import android.content.Context
 import android.util.Log
 import android.view.View
-import java.util.*
+import java.time.Instant
+import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
+import java.util.Calendar
+import java.util.Locale
 
 
 object Extensions
 {
+
+    object LocaleHelper {
+
+        fun setLocale(context: Context, language: String) {
+            val configuration = context.resources.configuration
+            val locale = Locale(language)
+            Locale.setDefault(locale)
+            configuration.setLocale(locale)
+            context.createConfigurationContext(configuration)
+            updateResources(context, language)
+        }
+
+        @Suppress("DEPRECATION")
+        private fun updateResources(context: Context, language: String) {
+            val resources = context.resources
+            val configuration = resources.configuration
+            val locale = Locale(language)
+            configuration.setLocale(locale)
+            resources.updateConfiguration(configuration, resources.displayMetrics)
+        }
+    }
+
+
     fun View.show(){
         visibility  = View.VISIBLE
     }
@@ -21,6 +45,28 @@ object Extensions
     }
 
     fun Any?.debug() = Log.d("funsol", "$this")
+
+
+    fun getTimeFromLong(timeInMilliseconds: Long): String? {
+        var mytime = ""
+        val minute = timeInMilliseconds / (1000 * 60) % 60
+        var hour = timeInMilliseconds / (1000 * 60 * 60) % 24
+        var am_pm = ""
+        if (hour < 12){
+            am_pm = "AM"
+        }
+        else{
+            am_pm = "PM"
+            if (hour > 12){
+                hour -= 12
+            }
+        }
+        mytime = String.format("%02d:%02d", hour, minute)
+        mytime = "$mytime $am_pm"
+        return mytime
+    }
+
+
 
 //    fun promptSpeechInput(activity: Activity, requestCode: Int, parentView: View?, promtMsg: String?) {
 //        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
@@ -35,4 +81,24 @@ object Extensions
 //        }
 //    }
 
+    fun isYesterday(timeInMillis: Long): Boolean {
+        val currentTime = System.currentTimeMillis()
+        val calendar = Calendar.getInstance()
+        calendar.timeInMillis = currentTime
+
+        val currentDay = calendar.get(Calendar.DAY_OF_YEAR)
+        val currentYear = calendar.get(Calendar.YEAR)
+
+        calendar.timeInMillis = timeInMillis
+        val day = calendar.get(Calendar.DAY_OF_YEAR)
+        val year = calendar.get(Calendar.YEAR)
+
+        return currentYear == year && currentDay - day == 1
+    }
+
+    fun Long.getDate(): String = DateTimeFormatter.ofPattern("dd MMMM yyyy")
+        .format(LocalDateTime.ofInstant(Instant.ofEpochMilli(this), ZoneId.systemDefault()))
+
+    fun Long.getDateTime(): String = DateTimeFormatter.ofPattern("dd MMMM yyyy | hh:mm a")
+            .format(LocalDateTime.ofInstant(Instant.ofEpochMilli(this), ZoneId.systemDefault()))
 }

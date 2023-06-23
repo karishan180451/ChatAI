@@ -54,17 +54,25 @@
         <action
             android:id="@+id/action_settingsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_settingsFragment_to_historyFragment"
-            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.chatai.view.fragments.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" >
-        <action
-            android:id="@+id/action_historyFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.example.chatai.view.fragments.FeedBackFragment"
+        android:label="fragment_feed_back"
+        tools:layout="@layout/fragment_feed_back" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.chatai.view.fragments.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/premiumFragment"
+        android:name="com.example.chatai.view.fragments.PremiumFragment"
+        android:label="fragment_premium"
+        tools:layout="@layout/fragment_premium" />
 </navigation>

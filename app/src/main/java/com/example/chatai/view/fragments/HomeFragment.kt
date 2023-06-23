@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.size
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import coil.load
@@ -13,6 +14,7 @@ import coil.transform.CircleCropTransformation
 import com.example.chatai.R
 import com.example.chatai.databinding.FragmentHomeBinding
 import com.example.chatai.view.adapters.HomeViewPagerAdapter
+import com.example.chatai.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -23,6 +25,8 @@ class HomeFragment @Inject constructor() : Fragment() {
     lateinit var binding: FragmentHomeBinding
 
     lateinit var mViewPager: ViewPager
+
+    private val mainViewModel: MainViewModel by activityViewModels()
 
     private var mViewPagerAdapter: HomeViewPagerAdapter? = null
 
@@ -63,7 +67,8 @@ class HomeFragment @Inject constructor() : Fragment() {
         }
 
         binding.settings.setOnClickListener {
-            findNavController().navigate(R.id.settingsFragment)
+//            findNavController().navigate(R.id.settingsFragment)
+            mainViewModel.updateScreenDisplayed("settings")
         }
 
         MainFragment.robotSelected = binding.robotName.text.toString()

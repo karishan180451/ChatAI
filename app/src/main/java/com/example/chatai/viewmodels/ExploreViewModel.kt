@@ -25,9 +25,9 @@ class ExploreViewModel  @Inject constructor() : ViewModel(){
         }
     }
 
-    fun updateOptionQuestion(string: String?){
+    fun updateOptionQuestion(question: String?){
         viewModelScope.launch {
-            optionQuestion.value = string
+            optionQuestion.value = question
         }
     }
 

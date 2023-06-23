@@ -20,5 +20,5 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun getChatRepository(chatDao: ChatDao): ChatRepository = ChatRepository(chatDao)
+    fun getChatRepository(chatDao: ChatDao, messageDao: MessageDao): ChatRepository = ChatRepository(chatDao, messageDao)
 }

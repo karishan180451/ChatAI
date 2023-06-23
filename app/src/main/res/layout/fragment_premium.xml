@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/premium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:background="@drawable/card_bg_main"
+        android:drawableEnd="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/robot"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/robotvactor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <View
+        android:id="@+id/text_quote"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:background="@drawable/quote3"
+        android:elevation="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/robot"
+        app:layout_constraintStart_toEndOf="@+id/cont"
+        app:layout_constraintTop_toTopOf="@+id/robot" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/upgrade_me"
+        android:textAppearance="@style/hello_i_am_"
+        android:textSize="@dimen/_8sdp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="@+id/text_quote"
+        app:layout_constraintEnd_toEndOf="@+id/text_quote"
+        app:layout_constraintStart_toStartOf="@+id/text_quote"
+        app:layout_constraintTop_toTopOf="@+id/text_quote"
+        app:layout_constraintVertical_bias="0.31"
+        app:drawableStartCompat="@drawable/check_vector" />
+
+    <ImageView
+        android:id="@+id/chip_vector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gradientvector"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/advantages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/chip_vector"
+        app:layout_constraintStart_toStartOf="@+id/chip_vector">
+
+        <TextView
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/check_vector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/unlimited_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:includeFontPadding="false"
+            android:text="Unlimited Questions"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/check1"
+            app:layout_constraintTop_toTopOf="@+id/check1" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@color/primary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check1" />
+
+        <TextView
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:drawableEnd="@drawable/check_vector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/word_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:text="Higher Word Limit"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/check2"
+            app:layout_constraintTop_toTopOf="@+id/check2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@color/primary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check2" />
+
+        <TextView
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:drawableEnd="@drawable/check_vector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/unlock_gpt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:includeFontPadding="false"
+            android:text="Unlock advance Chat GPT 4"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/check3"
+            app:layout_constraintTop_toTopOf="@+id/check3" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@color/primary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check3" />
+
+        <TextView
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:drawableEnd="@drawable/check_vector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/ads_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:includeFontPadding="false"
+            android:text="Ads Free"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/check4"
+            app:layout_constraintTop_toTopOf="@+id/check4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/save_50"
+        app:layout_constraintBottom_toBottomOf="@+id/save_50"
+        app:layout_constraintStart_toStartOf="@+id/save_50"
+        app:layout_constraintEnd_toEndOf="@+id/save_50"
+        android:elevation="3dp"
+        android:background="@drawable/circular_gold_rect"/>
+
+    <TextView
+        android:id="@+id/save_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/_2sdp"
+        android:text="Save 50%"
+        android:textColor="#3D1515"
+        android:textSize="@dimen/_10sdp"
+        android:elevation="3dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toTopOf="@+id/red_rect"
+        app:layout_constraintEnd_toEndOf="@+id/text_quote" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/red_rectangle"
+        app:layout_constraintBottom_toBottomOf="@+id/red_rect"
+        app:layout_constraintEnd_toEndOf="@+id/red_rect"
+        app:layout_constraintStart_toStartOf="@+id/red_rect"
+        app:layout_constraintTop_toTopOf="@id/red_rect" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/red_rect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gold_rect"
+        >
+
+        <TextView
+            android:id="@+id/check_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/check_circle"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/one_time_pur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One-Time Purchase"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_circle"
+            app:layout_constraintStart_toEndOf="@+id/check_circle"
+            app:layout_constraintTop_toTopOf="@+id/check_circle" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 2500.00"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/Primary"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/one_time_pur"
+            app:layout_constraintBottom_toBottomOf="@+id/one_time_pur"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/gold_rect"
+        app:layout_constraintEnd_toEndOf="@+id/gold_rect"
+        app:layout_constraintStart_toStartOf="@+id/gold_rect"
+        app:layout_constraintBottom_toBottomOf="@+id/gold_rect"
+        android:background="@drawable/rectangle_1"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gold_rect"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cont"
+        >
+
+        <TextView
+            android:id="@+id/become_a_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#3D1515"
+            android:letterSpacing="0.03"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/buy_premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableStartCompat="@drawable/red_next"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:text="Continue With ADs"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

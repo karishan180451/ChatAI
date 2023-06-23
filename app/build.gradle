@@ -18,6 +18,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField 'String', 'apiAuthenticationOne', '"Bearer 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"'
+
+
     }
     buildTypes {
         release {
@@ -72,5 +75,13 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
 
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.9'
+
+
+    implementation 'com.github.Funsol-Projects:Funsol-Billing-Helper:v1.0.3'
 
 }
